@@ -9,11 +9,63 @@
     <!-- font  awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- style.css file added -->
-     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <p class="text-center">Project setup</p>
+    <!-- header section start here  -->
+    <header class="shadow-sm py-2">
+       <div class="md:flex items-center justify-between w-11/12 mx-auto"                                                                                        >
+            <div> 
+                <h1 class="flex gap-1 items-center font-bold text-xl">English <img class="w-6" src="assets/logo.png" alt="">Janala</h1>
+            </div>
+            <div class="md:flex  items-center gap-3">
+                <button class="btn btn-sm  font-bold text-purple-500  "><i class="fa-solid fa-circle-question"></i> FAQ</button>
+                <button class="btn btn-sm font-bold text-purple-500 "><i class="fa-solid fa-book-open"></i> Learn</button>
+                <button class="btn btn-sm font-bold text-purple-500 "><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+            </div>
+       </div>
+    </header>
+    <!-- Banner section start here -->
+     <section>
+        <div class="flex items-center justify-between w-11/12 mx-auto">
+            <div class="w-[50%]">
+                <h1 class="font-bold text-xl"><span class="text-blue-500">English</span> is Easy !!</h1>
+                <p class="py-2">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+                <form class="space-y-2" >
+                   <input class="input" type="text" placeholder="Enter Your Name"><br>
+                   <input class="input" type="password" placeholder="Password Here"><br>
+                   <input class="btn btn-primary" type="button" value="Get Started">
+                </form>
+            </div>
+            <div class="w-[50%]">
+                <img class="w-120 mx-auto" src="assets/hero-student.png" alt="">
+            </div>
+        </div>
+     </section>
+     <!-- Category section start here -->
+      <section>
+         <div class="w-8/12 mx-auto py-10">
+             <h1 class="font-bold text-xl text-center"><span class="text-blue-500">Let's</span> Learn Vocabulary</h1>
+            <div id="category-container" class=" py-4 flex gap-3 items-center justify-center">
+              
+                
+           </div>
+      </section>
+      <!-- card section start here -->
+<section>
+    <div id="card-container" class="grid grid-cols-3 gap-3 bg-gray-200 p-5 w-11/12 mx-auto">
+        
+       
+        <div class="flex justify-center items-center col-span-full py-10 rounded">
+            <div>
+                <p>আপনি এখনো কোন Lesson Select করেন ন</p>
+                <p class="font-bold text-2xl">একটি Lesson Select করুন।</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    
+
+      <script src="scripts/index.js"></script>
 </body>
 </html>
