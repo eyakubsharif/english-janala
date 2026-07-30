@@ -23,7 +23,7 @@ const displayCategory =(categories)=>{
         for(let cat of categories){
             const div = document.createElement('div')
             div.innerHTML =`
-                 <button id="btn-${cat.level_no}" onclick="loadWord(${cat.level_no})" class="btn btn-sm border border-purple-300 font-bold text-purple-500 "><i class="fa-solid fa-book-open"></i> lesson-${cat.level_no}</button>
+                 <button id="btn-${cat.level_no}" onclick="loadWord(${cat.level_no})" class="btn btn-sm border border-purple-300 font-bold text-purple-500 w-full"><i class="fa-solid fa-book-open"></i> lesson-${cat.level_no}</button>
             
             `
             categoryContainer.appendChild(div)
