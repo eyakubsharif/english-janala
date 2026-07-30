@@ -104,3 +104,18 @@ const displayDetails =(data)=>{
 container.appendChild(div)
 }
 
+
+document.getElementById('searchBtn').addEventListener('click',function(){
+    const searchValue = document.getElementById('input').value
+    const value = searchValue.trim().toLowerCase()
+
+    fetch('https://openapi.programming-hero.com/api/words/all')
+    .then(res => res.json())
+    .then(data => {
+       const allData = data.data 
+      const singleData = allData.filter((word)=>word.word.toLowerCase().trim().includes(value))
+      displayWord(singleData)
+    })
+
+})
+
